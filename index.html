@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>i news ticker</title>
+<title>inewsticker</title>
 </head>
 <style>
 body {
@@ -40,6 +40,7 @@ pre {
 	width: 400px;
 	float: right;
 }
+
 .doc h1, .demo h1 {
 	background: none repeat scroll 0 0 #2874B3;
 	color: #1E5989;
@@ -69,11 +70,14 @@ pre {
 	padding-left:1px;
 }
 
-footer {
+.copyright {
 	color: #fff;
 	font-size: 12px;
+	width: 418px;
+	float: right;
+	margin-top: 20px;
 }
-footer a {
+.copyright a {
 	color: #fff;
 	font-weight: bold;
 }
@@ -84,14 +88,19 @@ footer a {
   <aside class="doc">
     <h1>Documention</h1>
     <div class="content">
-      <div> <strong>Step 1 : </strong> add <strong>jquery library and inewsticker.js </strong> before closed body tag </div>
-      <div><strong>Step 2 : </strong> add news ticker plugin after</div>
+      <div> <strong>Step 1 : add <strong>jquery.js</strong> and <strong>inewsticker.js</strong> before closed body tag </div>
+      <div><strong>Step 2 : </strong>add inewsticker function</div>
       <pre>
 $(document).ready(function() {
-    $('#names').jtyping({
-        speed  : 200,
-        effect : 'slide',		
-    });
+    $('#name').inewsticker({
+		speed       : 1500,
+		effect      : 'fade',
+		dir         : 'ltr',
+		font_size   : 13,
+		color       : '#fff',
+		font_family : 'arial',
+		delay_after : 1000		
+	});
 });
             </pre>
       <div><strong>Step 3 : </strong> change #name to your selector </div>
@@ -99,8 +108,11 @@ $(document).ready(function() {
       <ul>
         <li><strong>speed</strong> : text change speed</li>
         <li><strong>effect</strong> : text effect</li>
-        <li><strong>dir </strong> : text direction ltr or rtl</li>
-        <li><strong>typespeed</strong> : text typing speed </li>
+        <li><strong>dir </strong> : text direction (ltr or rtl)</li>
+        <li><strong>font_size</strong> : text font size </li>
+        <li><strong>color</strong> : text color </li>
+        <li><strong>font_family</strong> : text font family</li>
+        <li><strong>delay_after</strong> : text speed delay after </li>
       </ul>
     </div>
   </aside>
@@ -109,54 +121,57 @@ $(document).ready(function() {
     
     	<h3>Fade effect</h3>
     	<ul class="fade">
-        	<li>Hello world!</li>
-            <li>How are you?</li>
-            <li>Whats Your name ?</li>
-            <li>I am mahdi khaksar</li>
+        	<li>Hello</li>
+            <li>I am mahdi khaksar from iran</li>
+            <li>I am designer and programmer at progpars.com </li>
+            <li>www.ijquery.ir</li>
         </ul>
         
         <h3>Slide effect</h3>
     	<ul class="slide">
-        	<li>Hello world!</li>
-            <li>How are you?</li>
-            <li>Whats Your name ?</li>
-            <li>I am mahdi khaksar</li>
+        	<li>Hello</li>
+            <li>I am mahdi khaksar from iran</li>
+            <li>I am designer and programmer at progpars.com </li>
+            <li>www.ijquery.ir</li>
         </ul>
         
         <h3>Typing effect</h3>
     	<ul class="typing">
-        	<li>Hello world!</li>
-            <li>How are you?</li>
-            <li>Whats Your name ?</li>
-            <li>I am mahdi khaksar</li>
+        	<li>Hello</li>
+            <li>I am mahdi khaksar from iran</li>
+            <li>I am designer and programmer at progpars.com </li>
+            <li>www.ijquery.ir</li>
         </ul>
         
    
     
   </aside>
+  <aside class="copyright"> &copy; plugin by <a href="mailto:mahdi@ijquery.ir">mahdi khaksar</a> | progpars.com / ijquery.ir </aside>
   <div class="clear"></div>
 </section>
-<footer class="wrapper"> &copy; plugin by <a href="mailto:mahdi@ijquery.ir">mahdi khaksar</a> | progpars.com / ijquery.ir </footer>
 
-<script src="lib/jquery-1.10.2.min.js"></script>
-<script src="lib/inewsticker.js"></script>
+
+<script src="jquery.js"></script>
+<script src="inewsticker.js"></script>
 <script>
 $(document).ready(function() {
     $('.fade').inewsticker({
-		speed       : 1500,
+		speed       : 3000,
 		effect      : 'fade',
 		dir         : 'ltr',
 		font_size   : 13,
 		color       : '#fff',
-		font_family : 'arial'		
+		font_family : 'arial',
+		delay_after : 1000		
 	});
 	$('.slide').inewsticker({
-		speed       : 2000,
+		speed       : 2500,
 		effect      : 'slide',
 		dir         : 'ltr',
 		font_size   : 13,
 		color       : '#fff',
-		font_family : 'arial'				
+		font_family : 'arial',
+		delay_after : 1000						
 	});
 	$('.typing').inewsticker({
 		speed           : 100,
