@@ -1,5 +1,7 @@
 inewsticker
 ===========
+jquery news ticker Three effects: fade and slide and typing .
+demo : (http://www.ijquery.ir/demo.php?page=effects/inewsticker)
 #install
 Step 1 : add jquery.js and inewsticker.js before closed body tag
 Step 2 : add inewsticker function
