@@ -1,0 +1,24 @@
+{
+    "name": "inewsticker",
+    "title": "jQuery news ticker",
+    "description": "jQuery news ticker Three effects: fade and slide and typing .",
+    "keywords": [
+		"news",
+        "newsticker",
+        "fade",
+		"slide",
+		"typing"
+    ],
+    "version": "1",
+    "author": {
+        "name": "mahdi khaksar",
+        "url": "http://progpars.com"
+    },
+    "homepage": "https://github.com/progpars/inewsticker/",
+    "docs": "https://github.com/progpars/inewsticker/",
+    "download": "https://github.com/progpars/inewsticker/",
+	"demo": "http://www.ijquery.ir/demo.php?page=effects/inewsticker",
+    "dependencies": {
+        "jquery": ">=1.10.2"
+    }
+}
