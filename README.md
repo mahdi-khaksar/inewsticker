@@ -1,10 +1,11 @@
 inewsticker
 ===========
-jquery news ticker Three effects: fade and slide and typing .
+#Description
+jQuery news ticker Three effects: fade and slide and typing .
 
 demo : [inewsticker](http://www.ijquery.ir/demo.php?page=effects/inewsticker)
-#install
-Step 1 : add jquery.js and inewsticker.js before closed body tag
+#Usage
+Step 1 : add jQuery.js and inewsticker.js before closed body tag
 
 Step 2 : add inewsticker function
 
@@ -32,6 +33,9 @@ Step 3 : change #name to your selector
         color : text color
         font_family : text font family
         delay_after : text speed delay after
-
+        
+#Author
+        
+mahdi khaksar
 
 
