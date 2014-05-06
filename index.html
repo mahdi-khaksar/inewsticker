@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>i news ticker</title>
+</head>
+<style>
+body {
+	background: #348FDC;
+	margin: 0;
+	padding: 0;
+}
+pre {
+	background: none repeat scroll 0 0 #3B8ED3;
+	color: #FFFFFF;
+	line-height: 20px;
+	padding: 7px;
+}
+.clear {
+	clear: both;
+}
+.wrapper {
+	width: 980px;
+	margin: 15px auto 0;
+}
+.content {
+	color: #fff;
+	line-height: 30px;
+}
+.doc, .demo {
+	background: #2D81C8;
+	padding: 10px;
+	min-height: 500px;
+}
+.doc {
+	width: 520px;
+	float: left;
+}
+.demo {
+	width: 400px;
+	float: right;
+}
+.doc h1, .demo h1 {
+	background: none repeat scroll 0 0 #2874B3;
+	color: #1E5989;
+	margin-top: 0;
+	padding: 15px;
+	text-align: center;
+	text-shadow: 1px 1px #3B8ED3;
+}
+.demo > h3 {
+	color:#fff;	
+}
+.fade,.slide {
+    background: none repeat scroll 0 0 #3B8ED3;
+    color: #FFFFFF;
+    font-size: 13px;
+    padding: 10px;
+}
+.typing{
+	padding-left:18px;
+}
+.fade > li,.slide > li,.typing > li {
+    list-style: none inside none;
+}
+.demo > h3 {
+    color: #23669E;
+    font-size: 15px;
+	padding-left:1px;
+}
+
+footer {
+	color: #fff;
+	font-size: 12px;
+}
+footer a {
+	color: #fff;
+	font-weight: bold;
+}
+</style>
+
+<body>
+<section class="wrapper">
+  <aside class="doc">
+    <h1>Documention</h1>
+    <div class="content">
+      <div> <strong>Step 1 : </strong> add <strong>jquery library and inewsticker.js </strong> before closed body tag </div>
+      <div><strong>Step 2 : </strong> add news ticker plugin after</div>
+      <pre>
+$(document).ready(function() {
+    $('#names').jtyping({
+        speed  : 200,
+        effect : 'slide',		
+    });
+});
+            </pre>
+      <div><strong>Step 3 : </strong> change #name to your selector </div>
+      <strong>Options </strong>
+      <ul>
+        <li><strong>speed</strong> : text change speed</li>
+        <li><strong>effect</strong> : text effect</li>
+        <li><strong>dir </strong> : text direction ltr or rtl</li>
+        <li><strong>typespeed</strong> : text typing speed </li>
+      </ul>
+    </div>
+  </aside>
+  <aside class="demo">
+    <h1>Demo</h1>
+    
+    	<h3>Fade effect</h3>
+    	<ul class="fade">
+        	<li>Hello world!</li>
+            <li>How are you?</li>
+            <li>Whats Your name ?</li>
+            <li>I am mahdi khaksar</li>
+        </ul>
+        
+        <h3>Slide effect</h3>
+    	<ul class="slide">
+        	<li>Hello world!</li>
+            <li>How are you?</li>
+            <li>Whats Your name ?</li>
+            <li>I am mahdi khaksar</li>
+        </ul>
+        
+        <h3>Typing effect</h3>
+    	<ul class="typing">
+        	<li>Hello world!</li>
+            <li>How are you?</li>
+            <li>Whats Your name ?</li>
+            <li>I am mahdi khaksar</li>
+        </ul>
+        
+   
+    
+  </aside>
+  <div class="clear"></div>
+</section>
+<footer class="wrapper"> &copy; plugin by <a href="mailto:mahdi@ijquery.ir">mahdi khaksar</a> | progpars.com / ijquery.ir </footer>
+
+<script src="lib/jquery-1.10.2.min.js"></script>
+<script src="lib/inewsticker.js"></script>
+<script>
+$(document).ready(function() {
+    $('.fade').inewsticker({
+		speed       : 1500,
+		effect      : 'fade',
+		dir         : 'ltr',
+		font_size   : 13,
+		color       : '#fff',
+		font_family : 'arial'		
+	});
+	$('.slide').inewsticker({
+		speed       : 2000,
+		effect      : 'slide',
+		dir         : 'ltr',
+		font_size   : 13,
+		color       : '#fff',
+		font_family : 'arial'				
+	});
+	$('.typing').inewsticker({
+		speed           : 100,
+		effect          : 'typing',
+		dir             : 'ltr',
+		font_size       : 13,
+		color           : '#fff',
+		font_family     : 'arial',
+		delay_after : 1000,
+
+				
+	});
+});	
+</script>
+</body>
+</html>
