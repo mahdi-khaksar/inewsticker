@@ -24,3 +24,5 @@
   "demo": "http://www.ijquery.ir/demo.php?page=effects/inewsticker",
   "dependencies": { "jquery": ">=1.10.2" }
 }
+$ git tag 1.1.0
+$ git push origin --"news", "newsticker", "effect", "fade", "slide", "typing"
