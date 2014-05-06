@@ -1,3 +1,4 @@
 inewsticker
 ===========
-$mkdir ~/Hello-World
+salam
+  salam
