@@ -1,5 +1,5 @@
 //Plugin name        : inewsticker - jQuery news ticker 
-//Version            : 1
+//Version            : 0.1.0
 //Author             : mahdi khaksar
 //Author website     : progpars.com
 //Url	 			 : http://www.ijquery.ir/effect/inewsticker/
