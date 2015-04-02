@@ -36,6 +36,5 @@ Step 3 : change #name to your selector
         
 #Author
         
-طراحی وب سایت
-
+<a href="http://www.progpars.com">طراحی وب سایت</a>
 
