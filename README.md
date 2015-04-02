@@ -36,6 +36,6 @@ Step 3 : change #name to your selector
         
 #Author
         
-mahdi khaksar
+طراحی وب سایت
 
 
