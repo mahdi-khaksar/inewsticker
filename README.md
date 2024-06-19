@@ -34,7 +34,3 @@ Step 3 : change #name to your selector
         font_family : text font family
         delay_after : text speed delay after
         
-#Author
-        
-<a href="http://www.progpars.com">طراحی وب سایت</a>
-<a href="http://www.progpars.com">طراحی سایت</a>
